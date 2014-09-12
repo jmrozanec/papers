@@ -1,6 +1,6 @@
 # [Scality](http://nosqltapes.com/video/jerome-lecat-on-scality)
 
-Scality was started when they realized multiple email companies had a problem with storage not scaling into the next few years. Email is near realtime since the users want to se the email and related emails on single page, and be able to retrieve it in matter of milliseconds. Requires strong consistency, since no email can be lost.
+Scality is an object oriented database. Was started when they realized multiple email companies had a problem with storage not scaling into the next few years. Email is near realtime since the users want to se the email and related emails on single page, and be able to retrieve it in matter of milliseconds. Requires strong consistency, since no email can be lost.
 
 In a future people will build utility computing: storage power, computing power, etc. which requires to create economies of scale. Notions of virtualization, SaaS and cloud computing move in that direction and are the start of that curve.
 
