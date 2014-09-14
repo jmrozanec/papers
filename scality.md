@@ -19,6 +19,3 @@ For key space Scality uses [RING](http://www.scality.com/products/what-is-ring/)
 - The application decides how to use the key space.
 - Metadata
 
-Cloud storage can be enough fast to be used as tier 1 storage.
-
-
