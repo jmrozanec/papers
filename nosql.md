@@ -40,3 +40,6 @@ People tend to have an utilitarian understanding of things, and not do not even 
 First important thing is to understand own platform and see what can be tuned.
 
 An indicator that you are doing something really interesting, is that you need to be using more than a database.
+
+## [NoSQL at Fermilab](http://nosqltapes.com/video/nosql-at-fermilab)
+
