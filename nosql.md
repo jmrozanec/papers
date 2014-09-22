@@ -44,3 +44,15 @@ An indicator that you are doing something really interesting, is that you need t
 ## [NoSQL at Fermilab](http://nosqltapes.com/video/nosql-at-fermilab)
 
 NoSQL technologies at Fermilab and LHC.
+
+All data that comes from experiment is first loaded into an Oracle DB.
+
+Technologies used are CouchDB useful since they have same queries to be performed over data updated. CouchDB feature for incremental calculations fits this need.
+
+MongoDB is used as a physical index of documents to be accessed.
+
+NoSQL stores are not directly related to the data load, since are not used on first tier.
+
+A reason to use NoSQL is the need to deal with changing requirements about data stored, quickly varying. Using a SQL schema would limit the application considerably. By using NoSQL, the changes can be embraced.
+
+
