@@ -31,3 +31,21 @@ MillWheel is a graph of user-defined transformations / computations. Each of the
 - persistent state: is an opaque string managed on a per key basis. The user provides seriablization / deserialization routines. Persistent state is backed by a replicated, highly available data store.
 - low watermarks: provides a bound on the timestamps of future records arriving at that computation. min(oldest work at A, low watermark of C:C outputs to A). If there are no input streams, the low watermark and oldest work values are equivalent.
 - timers: per key programmatic hooks that trigger at a specific wall time or low watermark value.
+
+## 6. Fault tolerance
+- delivery guarantees: much of the conceptual ability of MillWheel's programming model hinges upon the ability to take non-idempotent user code and run it as if it were idempotent. By removing this requirement from computation authors, they are relieved from a significant implementation burden.
+ - exactly-once delivery:
+  - record is checked against record is checked agains deduplication data from previous records. A Bloom filter of know record fingerprints is used for this.
+  - user code is run for the input record, possibly resulting in pending changes to timers, state and productions
+  - pending changes are committed to the backing store
+  - senders are ACKd
+  - pending downstream productions are sent
+ - strong productions: produced records are checkpointed before delivery in the same atomic write as state modification.
+ - weak productions: rather than checkpointing record productions before delivery, we broadcast downstream deliveries optimistically, prior to persisting state.
+
+- state manipulation:
+ - requires to ensure the system does not loose data
+ - updates to state must obey once semantics
+ - all persisted data throughout the system must be consistent at any given point in time
+ - low watermarks must reflect all pending state in the system
+ - timers must fire in-order for a given key
