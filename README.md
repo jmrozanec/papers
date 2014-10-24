@@ -18,3 +18,7 @@ Main concepts from videos posted at [nosqltapes.com](http://nosqltapes.com/)
 - [RethinkDB](https://github.com/jmrozanec/papers/blob/master/rethinkdb.md)
 - [Riak](https://github.com/jmrozanec/papers/blob/master/riak.md)
 - [Scality](https://github.com/jmrozanec/papers/blob/master/scality.md)
+
+## Data Mining
+
+### Class imbalance problem
