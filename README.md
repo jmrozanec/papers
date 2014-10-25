@@ -19,6 +19,10 @@ Main concepts from videos posted at [nosqltapes.com](http://nosqltapes.com/)
 - [Riak](https://github.com/jmrozanec/papers/blob/master/riak.md)
 - [Scality](https://github.com/jmrozanec/papers/blob/master/scality.md)
 
+## Big data
+
+- [Google - MillWheel](https://github.com/jmrozanec/papers/blob/master/millwheel.md)
+
 ## Data Mining
 
 ### Class imbalance problem
