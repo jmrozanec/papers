@@ -26,3 +26,6 @@ Main concepts from videos posted at [nosqltapes.com](http://nosqltapes.com/)
 ## Data Mining
 
 ### Class imbalance problem
+
+- [The class imbalance problem: a systematic study](https://github.com/jmrozanec/papers/blob/master/class_imbalance_problem/a_systematic_study.md)
+- [The class imbalance problem in pattern classification and learning](https://github.com/jmrozanec/papers/blob/master/class_imbalance_problem/in_pattern_classification_learning.md)
