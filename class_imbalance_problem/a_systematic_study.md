@@ -1,6 +1,5 @@
-[The class imbalance problem: a systematic study](https://www.site.uottawa.ca/~nat/Papers/techreport-imbalanced.ps.gz)
+# [The class imbalance problem: a systematic study](https://www.site.uottawa.ca/~nat/Papers/techreport-imbalanced.ps.gz)
 
-Results:
 Conclusions: the class imbalance problem is a relative problem that depends on:
 - the degree of imbalance
 - the complexity of the problem represented by data
