@@ -38,3 +38,8 @@ Some operations can be executin in-place: require no additional memory and impro
 
 ## Conclusion
 We have shown how a hybrid bitmap format, combining three container types (arrays, bitmaps and runs) in a two-level tree could surpass competitive implementations of other popular formats (Concise, WAH, EWAH), being up to hundreds of times faster. For analytical applications, where the bitmaps are not constantly updated, and where we can afford to sort the data prior to indexing, applying run compression to the Roaring format is particularly appealing. The new format has been adopted by existing systems such as Apache Spark, Apache Kylin and Druid.
+
+# Other links of interest:
+- [Bit map index and SQL](https://richardstartin.com/2017/01/09/how-a-bitmap-index-works/)
+- [Pilosa data model](https://www.pilosa.com/docs/data-model/): opensource distributed bitmap index. 
+
